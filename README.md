@@ -32,6 +32,15 @@ The loop preamplifier is built around 4 key functional stages:
 ## Schematics
 <img width="1156" height="345" alt="image" src="https://github.com/user-attachments/assets/7bbb96dc-14c6-4cbb-804f-48a8de589aaa" />
 
+## 🗺 Roadmap / Project ideas
+
+Add an optional 75 Ohm output as well, or add a separate 50 to 50+75 splitter. This hardware change should have a software counterpart, which reads both the OpenStint and MyLaps decoders, and merges the results into a single stream for laptiming applications. We could keep both open and commercial transponders to co-exists on the same track this way. Also, upgrading post-4.4 firmware won't be such a headache neither.
+
+Automatic gain control: even a simple one could increase the dynamic range of the decoders.
+
+
+
+
 
 ---
 Part of the OpenStint Laptimer System – open, modular, and precise RC timing.
