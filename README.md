@@ -1,7 +1,9 @@
 # OpenStint Loop Preamplifier Board
 
-The **OpenStint Loop Preamplifier Board** is an optional front-end module, designed for the [OpenStint Laptimer System](https://github.com/zsellera/openstint).  
-It provides signal conditioning and amplification for the inductive loop sensor, ensuring clean, stable, and maximized signal transfer to the timing receiver.
+The **OpenStint Loop Preamplifier Board** is an optional front-end module, designed for the [OpenStint Laptimer System](https://github.com/zsellera/openstint). It provides signal conditioning and amplification for the parallel-wire "antenna", ensuring clean, stable, and maximized signal transfer to the timing receiver.
+
+<img width="800" alt="openstint preamp, rev 1." src="https://github.com/user-attachments/assets/124f38fc-45e9-4060-b4db-2ab19285af84" />
+
 
 ## 🔧 Features
 
