@@ -15,21 +15,16 @@ The **OpenStint Loop Preamplifier Board** is an optional front-end module, desig
 - Open hardware design – schematics and PCB available under permissive license
 - Directly manufacturable at JLCPCB (LCSC part codes provided).
 
-## ✳️  Overview
+## ✳️ Measurement Results
 
-The loop preamplifier is built around 4 key functional stages:
+The following measurements were made at the `VNA_IN` port (after the balun).
 
-1. **Balanced–Unbalanced Conversion**  
-   Converts the differential loop input into a single-ended signal. It has some input protection that can also clamp the input signal in case of close transmitters.
+**POWER GAIN**
+<img width="954" height="885" alt="image" src="https://github.com/user-attachments/assets/e1d99bb5-b01f-4508-aae7-5364899a0f6a" />
 
-2. **Matching Network**  
-   Optimizes impedance matching between the loop and the amplifier for maximal power transfer and improved sensitivity.
+**INPUT MATCHING**
+<img width="1640" height="726" alt="image" src="https://github.com/user-attachments/assets/c65f61b1-97e2-4e6c-9c82-a492dd5fa86e" />
 
-3. **+12 dB Low-Noise Amplifier (LNA)**  
-   Boosts the signal with minimal added noise, ensuring reliable lap detection even under low signal conditions.
-
-4. **Band-pass filter**
-   SDRs unfortunatelly downconvert out-of-band signals to basebands (like harmonics of LO). This filter does some justice, and is probably the most important contribution of this preamp board.
 
 ## Schematics
 <img width="1156" height="345" alt="image" src="https://github.com/user-attachments/assets/7bbb96dc-14c6-4cbb-804f-48a8de589aaa" />
