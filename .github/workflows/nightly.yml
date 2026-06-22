@@ -22,13 +22,20 @@ jobs:
           echo "LD_LIBRARY_PATH=/usr/lib/kicad/lib/x86_64-linux-gnu:/usr/lib/kicad/lib/" >> $GITHUB_ENV
           pip install kikit
 
+      - name: Panelize PCB
+        run: |
+          mkdir -p panel
+          kikit panelize -p kikit-panel-config.json \
+            kicad/openstint-preamp.kicad_pcb \
+            panel/panel.kicad_pcb
+
       - name: Generate JLCPCB fab files
         working-directory: kicad
         run: |
           mkdir -p ../fab
           kikit fab jlcpcb --no-drc --assembly \
             --schematic openstint-preamp.kicad_sch \
-            openstint-preamp.kicad_pcb \
+            ../panel/panel.kicad_pcb \
             ../fab/
 
       - name: Export schematic to PNG

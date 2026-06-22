@@ -1,0 +1,28 @@
+{
+    "layout": {
+        "hspace": "3mm",
+        "vspace": "3mm",
+        "rows": "1",
+        "cols": "2"
+    },
+    "tabs": {
+        "type": "fixed",
+        "vwidth": "4mm",
+        "hwidth": "4mm",
+        "vcount": "2",
+        "hcount": "2"
+    },
+    "cuts": {
+        "type": "mousebites",
+        "offset": "-0.25mm"
+    },
+    "framing": {
+        "type": "railstb",
+        "hspace": "3mm",
+        "vspace": "3mm",
+        "width": "4mm"
+    },
+    "post": {
+        "millradius": "1.5mm"
+    }
+}
